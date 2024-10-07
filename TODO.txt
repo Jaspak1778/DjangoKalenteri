@@ -1,8 +1,9 @@
 Kalenteri app Django
+----------------------
 Grepo!
-
 https://github.com/Jaspak1778/DjangoKalenteri.git
-
+----------------------
+'Eka kommitti'
 git init
 git status
 git add .
@@ -10,11 +11,12 @@ git commit -m "komment"
 git remote add origin 'repo'
 git push origin master
 ----------------------
+'Jatko kommitit'
 git add .
 git commit -m "komment"
 got push origin master
 ----------------------
-
+python manage.py runserver
 -:-
 
 *******************************

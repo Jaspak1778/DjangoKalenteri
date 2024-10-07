@@ -34,7 +34,6 @@ def add_event(request):                  # tietokantaan tallennus
     context = {'form': form}
     return render(request, 'eventadd.html', context)
 
-
 def poistaevent(request, id):
     Events.objects.get(id = id).delete()
     return redirect(home)

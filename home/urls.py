@@ -14,12 +14,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+#path: E:\Koodi\DJANGO\Calendar\home\home\urls.py
+# Path: E:\Koodi\DJANGO\Calendar\home\home\urls.py
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from databasemgnt.views import add_event, poistaevent
 from .views import home
 
 urlpatterns = [
-    path('', home),
+    path('', home, name='home'),
     path('admin/', admin.site.urls),
-    path('add_event/', include('databasemgnt.urls')),
+    path('add_event/', add_event, name='add_event'),
+    path('poistaevent/<int:id>/', poistaevent, name='poistaevent'),
 ]

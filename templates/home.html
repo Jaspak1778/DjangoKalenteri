@@ -25,7 +25,7 @@
                 <td>{{ ev.enddate }}</td>
                 <td>{{ ev.endtime }}</td>
                 <td>{{ ev.notes }}</td>
-                <td><a href="{% url, 'poistaeve'}">Poista</a></td>
+                <td><a href="{% url 'poistaevent' ev.id %}">Poista</a></td>
         </tr>
     </tbody>
     </thead>

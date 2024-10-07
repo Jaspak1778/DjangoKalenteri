@@ -1,0 +1,23 @@
+<!--Täällä lisätään tapahtumia sisältää formin-->
+<!--templates/eventadd.html-->
+
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<h1>Lisää uusi tapahtuma</h1>
+    
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}  <!-- Renderöi lomake HTML-muodossa -->
+
+
+    <!--- toinen tapa, jos haluaa sommitella tai eritellä tarkemmin...
+    <p>{{ form.eventName.label_tag }} {{ form.eventName }}</p>
+    <p>{{ form.startTime.label_tag }} {{ form.startTime }}</p
+    -->
+
+    <button type="submit">Lähetä</button>
+</form>
+
+{% endblock %}

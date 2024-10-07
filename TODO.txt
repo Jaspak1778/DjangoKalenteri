@@ -1,0 +1,14 @@
+Luo tietokanta toiminnot:
+    -Tietokantaan tallennus - todo
+    -Tietokannasta haku - OK
+
+Muotoilut:
+    -CSS - todo
+    -static kansio - todo
+
+
+Katso dokumentaatiosta Djangon moduulit
+Moduuleihin viittaus moduuli.luokka
+
+
+ 

@@ -1,0 +1,83 @@
+/*Omat CSS tyylit tänne! 
+NOTE:
+#asetukset
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+        "/path/to/my/project/templates/static/",
+)
+#html
+<html>
+    <head>
+        <title>TEst site</title>
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css"/>
+    </head>
+
+*/
+
+table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin: 20px 0;
+  font-size: 16px;
+  font-family: Segoe UI;
+  text-align: center;
+}
+
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  
+}
+
+
+th {
+  background-color: #9dcdca;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  
+}
+
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+
+tr:hover {
+  background-color: #fffbdb;
+}
+
+
+td {
+  vertical-align: middle;
+}
+
+
+@media (max-width: 600px) {
+  table {
+      font-size: 12px;
+  }
+  th, td {
+      padding: 8px;
+  }
+}
+
+
+.active-day {
+  background-color: #ffcc00;
+  color: black;
+  font-weight: bold;
+}
+
+
+.weekend {
+  background-color: #f9c0c0;
+  color: black;
+}
+
+
+.holiday {
+  background-color: #ff6666;
+  color: white;
+}

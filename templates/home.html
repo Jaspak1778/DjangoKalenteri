@@ -1,0 +1,34 @@
+<!--Tähän tulee ensimmäinen sisältö sivusto-->
+<!--templates/home.html-->
+
+{% extends 'layout.html' %}
+{% block content %}
+
+<table class="table">
+    <thead>
+        <tbody>
+        <h3>Tapahtumat</h3>
+        <tr>
+            <th>Nimi</th>
+            <th>Alkupvm</th>
+            <th>Alkuaika</th>
+            <th>Loppupvm</th>
+            <th>Loppuaika</th>
+            <th>Huomautus</th>
+            <th></th>
+        </tr>
+        <tr>
+                {% for ev in tapahtumia %}
+                <td>{{ ev.eventname }}</td>
+                <td>{{ ev.startdate }}</td>
+                <td>{{ ev.starttime }}</td>
+                <td>{{ ev.enddate }}</td>
+                <td>{{ ev.endtime }}</td>
+                <td>{{ ev.notes }}</td>
+                <td><a href="{% url, 'poistaeve'}">Poista</a></td>
+        </tr>
+    </tbody>
+    </thead>
+{% endfor %}
+</table>
+{% endblock %}

@@ -1,12 +1,34 @@
+Kalenteri app Django
+Grepo!
+
+https://github.com/Jaspak1778/DjangoKalenteri.git
+
+git init
+git status
+git add .
+git commit -m "komment"
+git remote add origin 'repo'
+git push origin master
+----------------------
+git add .
+git commit -m "komment"
+got push origin master
+----------------------
+
+-:-
+
+*******************************
+TODOS !
+
 Luo tietokanta toiminnot:
-    -Tietokantaan tallennus - todo
+    -Tietokantaan tallennus - OK
     -Tietokannasta haku - OK
 
 Muotoilut:
-    -CSS - todo
-    -static kansio - todo
+    -CSS - OK
+    -static kansio - OK
 
-
+Hep!
 Katso dokumentaatiosta Djangon moduulit
 Moduuleihin viittaus moduuli.luokka
 
